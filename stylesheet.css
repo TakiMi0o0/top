@@ -1,0 +1,250 @@
+img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+p{
+  font-size: 14px;
+}
+/*  ヘッダー  */
+.header-main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+.header-left{
+  font-size: 24px;
+  height: 30px;
+}
+.header-right{
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+.left-btn,.right-btn{
+  margin: 0 10px;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+.left-btn{
+  background-color: #e95464;
+}
+.right-btn{
+  background-color: green;
+}
+.header-menu{
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  margin: 20px;
+}
+.main-image{
+  width: 100%;
+  height: 400px;
+}
+@media screen and (min-width:768px) {
+  .main-image{
+    height: 600px;
+  }
+}
+
+/*  コンテンツ全体&タイトル  */
+.main-contents{
+  max-width: 1200px;
+  margin: 20px;
+  @media screen and (min-width:1200px) {
+    margin: 0 auto 60px auto;
+  }
+}
+.main-content-title{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/*  メインコンテンツ 1  */
+.main-content-description{
+  padding-bottom: 10px;
+}
+.contents-1{
+  margin-top: 30px;
+}
+.content-1-right{
+  height: 400px;
+}
+.content-1-text h2{
+  font-size: 16px;
+  padding: 10px 0;
+}
+@media screen and (min-width:768px) {
+  .contents-1{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content-1-left{
+    width: 65%;
+    order: 1;
+  }
+  .content-1-right{
+    width: 35%;
+    order: 2;
+  }
+  .content-1-img{
+    height: 250px;
+  }
+  .content-1-text h2{
+    font-size: 24px;
+  }
+  .content-1-text p{
+    padding-top: 20px;
+  }
+  .content-1_reverse>.content-1-left{
+    order: 2;
+  }
+  .content-1_reverse>.content-1-right{
+    order: 1;
+  }
+}
+@media screen and (min-width:1200px) {
+  .content-1-img{
+    height: 400px;
+  }
+}
+
+/*  メインコンテンツ 2  */
+.content-2-image{
+  height: 400px;
+}
+.content-2-text{
+  margin: 10px 0 30px 0;
+}
+@media screen and (min-width:768px) {
+  .contents-2{
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-2-main{
+    width: calc(100% / 2 - 20px);
+  }
+  .content-2-image{
+    height: 150px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .content-2-image{
+    height: 300px;
+  }
+}
+
+/*  メインコンテンツ 3  */
+.contents-3{
+  background-color: #3333;
+  padding: 30px;
+  margin: 30px 0;
+}
+.content-3-image{
+  width: 100%;
+  height: 400px;
+}
+.content-3-text{
+  margin-top: 10px;
+ }
+@media screen and (min-width:768px) {
+  .contents-3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .content-3-image{
+    width: 45%;
+    height: 350px;
+  }
+  .content-3-text{
+    width: 65%;
+    margin-left: 10px;
+   }
+}
+
+/*  メインコンテンツ 4  */
+.content-4-subtitle{
+  font-size: 16px;
+  margin: 10px 0;
+}
+.content-4-image{
+  margin-top: 10px;
+}
+@media screen and (min-width:768px) {
+  .contents-4{
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-4-main{
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+/*  リンク  */
+.links{
+  background-color: silver;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 500px;
+}
+.link-left,.link-right{
+  width: calc(100% / 2 - 50px);
+  background-color: white;
+  padding: 30px 40px;
+}
+.link-left>a>.left-btn,.link-right>a>.right-btn{
+  margin: 20px auto 0 auto;
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+}
+.link_text{
+  font-weight: bold;
+}
+
+/*  フッター  */
+.company-prof{
+  text-align: center;
+  margin-bottom: 80px;
+}
+.company-name{
+  font-weight: bold;
+}
+.company-name,.company-time{
+  margin: 5px 0 ;
+}
+.company-address,.company-phone{
+  margin: 5px;
+}
+.footer-menu{
+  padding: 30px 20px 80px 20px;
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+}
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-links>li{
+  padding-bottom: 10px;
+}
+.footer-link07{
+  margin-left: auto;
+}
+.footer-text{
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
