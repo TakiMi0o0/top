@@ -7,7 +7,7 @@
 </head>
 <body>
   <?php
-  function showString($num, $str) {
+    function showString($num, $str) {
       for ($i = 0; $i < $num; $i++) {
           echo $str . "<br>";
       }
