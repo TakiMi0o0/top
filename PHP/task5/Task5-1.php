@@ -7,14 +7,17 @@
 </head>
 <body>
   <h1>九九の計算</h1>
-  <?php
-    for($i = 1; $i <=9; $i++){
-      for($n = 1; $n <= 9; $n++){
-          $ans = $i * $n;
-          echo $i.' × '.$n.' = '.$ans.'　';
+  <table>
+    <?php
+      for($i = 1; $i <=9; $i++){
+        echo '<tr>';
+        for($n = 1; $n <= 9; $n++){
+            $ans = $i * $n;
+            echo '<td>'. $i. ' × '. $n. ' = '. $ans. '　</td>';
+        }
+        echo '</tr>';
       }
-      echo '<br>';
-    }
-  ?>
+    ?>
+  </table>
 </body>
 </html>

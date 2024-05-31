@@ -9,6 +9,7 @@
   <?php
     $a = array('name' => '鉛筆','price' => 100);
     $b = array('name' => '消しゴム','price' => 200);
+    define("TAX",1.1);
   ?>
   <table>
     <tr>
@@ -20,14 +21,14 @@
     <tr>
       <td><?= $a['name'] ?></td>
       <td><?= $a['price'] ?>円</td>
-      <td><?= $a['price'] * 1.1 ?>円</td>
-      <td><?= $a['price'] * 1.1 * 12 ?>円</td>
+      <td><?= $a['price'] * TAX ?>円</td>
+      <td><?= $a['price'] * TAX * 12 ?>円</td>
     </tr>
     <tr>
       <td><?= $b['name'] ?></td>
       <td><?= $b['price'] ?>円</td>
-      <td><?= $b['price'] * 1.1 ?>円</td>
-      <td><?= $b['price'] * 1.1 * 12 ?>円</td>
+      <td><?= $b['price'] * TAX ?>円</td>
+      <td><?= $b['price'] * TAX * 12 ?>円</td>
     </tr>
   </table>
   <p>消費税は10％です。</p>

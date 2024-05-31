@@ -7,13 +7,13 @@
 </head>
 <body>
 <?php
-  $tax = 10;
+  define("TAX",10);
   $pencil_price = 100;
   $pencil_price_tax = 110;
   $eraser_price = 200;
   $eraser_price_tax = 220;
 
-  $message = "現在、消費税は" . $tax . "％です。<br>" .
+  $message = "現在、消費税は" . TAX . "％です。<br>" .
              "鉛筆が" . $pencil_price . "円で税込" . $pencil_price_tax . "円です。<br>" .
              "消しゴムが" . $eraser_price . "円で税込" . $eraser_price_tax . "円です。";
 ?>

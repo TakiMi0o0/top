@@ -9,11 +9,11 @@
   <?php
     $random_n = mt_rand(1,12);
     $season = "";
-    if ($random_n === 3 || $random_n === 4 || $random_n === 5) {
+    if ($random_n >= 3 && $random_n < 5) {
       $season = "春";
-    } elseif ($random_n === 6 || $random_n === 7 || $random_n === 8) {
+    } elseif ($random_n >= 6 && $random_n < 8) {
       $season = "夏";
-    } elseif ($random_n === 9 || $random_n === 10 || $random_n === 11) {
+    } elseif ($random_n >= 9 && $random_n < 11) {
       $season = "秋";
     } else {
       $season = "冬";
