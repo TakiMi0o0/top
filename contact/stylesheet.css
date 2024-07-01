@@ -83,9 +83,6 @@ p{
   padding: 5px;
   width: 70%;
 }
-.contacts>select{
-  color: lightgrey;
-}
 .required{
   margin-left: 15px;
   padding: 3px;
@@ -94,7 +91,7 @@ p{
   border-radius: 3px;
   font-size: small;
 }
-.agree>a{
+.form_agree>a{
   margin: 0 3px;
   color: green;
   border-bottom: solid 1px green;

@@ -7,7 +7,7 @@
   <meta name="direction" content="">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="stylesheet.css">
-</head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 <body>
 
   <!--  ヘッダー&メインイメージ  -->
@@ -35,30 +35,41 @@
       <p class="contact-text-description">お問い合わせや業務内容に関するご質問は、電話またはこちらのお問い合わせフォームより承っております。<br>
       後ほど担当者よりご連絡させていただきます。</p>
     </div>
-    <form method="post" action="">
+    <form action="task8-1.php" method="post">
       <div class="contact-form">
         <div class="contacts">
-          <label for="form_name">お名前<span class="required">必須</span></label><input type="text" placeholder="山田太郎" id="form_name">
+          <label for="form_name">お名前<span class="required">必須</span></label><input type="text" placeholder="山田太郎" id="form_name" name="form_name">
         </div>
         <div class="contacts">
-          <label for="form_kana">フリガナ<span class="required">必須</span></label><input type="text" placeholder="ヤマダタロウ" id="form_kana">
+          <label for="form_kana">フリガナ<span class="required">必須</span></label><input type="text" placeholder="ヤマダタロウ" id="form_kana" name="form_kana">
         </div>
         <div class="contacts">
-          <label for="form_address">メールアドレス<span class="required">必須</span></label><input type="text"  placeholder="info@fast-creademy.jp" id="form_address">
+          <label for="form_email">メールアドレス<span class="required">必須</span></label><input type="text" placeholder="info@fast-creademy.jp" id="form_email" name="form_email">
         </div>
         <div class="contacts">
-          <label for="form_phone">電話番号<span class="required">必須</span></label><input type="text" placeholder="000-0000-0000" id="form_phone">
+          <label for="form_phone">電話番号<span class="required">必須</span></label><input type="text" placeholder="000-0000-0000" id="form_phone" name="form_phone">
         </div>
         <div class="contacts">
           <label for="form_item">お問い合わせ項目<span class="required">必須</span></label>
-          <select name="select_items" id="form_item"><option value="1">選択してください</option></select>
+          <select name="select_item" id="select_item">
+            <option value="" hidden>選択してください</option>
+            <option value="選択1">選択1</option>
+            <option value="選択2">選択2</option>
+            <option value="選択3">選択3</option>
+          </select>
         </div>
         <div class="contacts">
-          <label for="form_details">お問い合わせ内容<span class="required">必須</span></label><textarea rows="6" placeholder="こちらにお問い合わせ内容をご記入ください" id="form_details"></textarea>
+          <label for="form_details">お問い合わせ内容<span class="required">必須</span></label><textarea rows="6" placeholder="こちらにお問い合わせ内容をご記入ください" id="form_details" name="form_details"></textarea>
         </div>
         <div class="contacts">
           <label for="form_agree">個人情報保護方針<span class="required">必須</span></label>
-          <div class="agree"><input type="checkbox" value="1" aria-invalid="false"><a href="#" target="_blank">個人情報保護方針</a>に同意します。</div>
+          <div class="form_agree">
+            <input type="checkbox" name="form_agree" id="form_agree" value="1">
+            <a href="#" target="_blank">個人情報保護方針
+              <span class="material-symbols-outlined">tab_group
+              <style>.material-symbols-outlined {font-size:16px;}
+              </style></span></a>に同意します。
+          </div>
         </div>
       </div>
       <div class="form_submit">
